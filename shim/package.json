@@ -1,0 +1,5 @@
+{
+  "name": "@bkucera/eslint-plugin-config",
+  "version": "0.0.0",
+  "main": "../../../src"
+}

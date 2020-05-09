@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "@bkucera/config"
+  ],
+  "extends": [
+    "plugin:@bkucera/config/general"
+  ],
+  "rules": {}
+}

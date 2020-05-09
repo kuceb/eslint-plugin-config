@@ -1,0 +1,9 @@
+{
+  // enble eslint fix-on-save
+  "eslint.validate": ["json"],
+  "editor.formatOnSave": true,
+  "eslint.enable": true
+}
+
+
+
