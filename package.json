@@ -1,0 +1,41 @@
+{
+  "name": "@bkucera/eslint-plugin-config",
+  "version": "0.0.0-development",
+  "description": "Common ESLint rules for @bkucera",
+  "main": "lib",
+  "scripts": {
+    "lint": "eslint --ext .js,json,.ts,.tsx .",
+    "lint-fix": "yarn lint --fix",
+    "semantic-release": "semantic-release",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-sort-requires": "^2.1.0"
+  },
+  "devDependencies": {
+    "@bkucera/eslint-plugin-config": "file:./shim",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "semantic-release": "^17.0.7",
+    "typescript": "^3.8.3"
+  },
+  "license": "MIT",
+  "author": "bkucera",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": [
+      "eslint --fix"
+    ]
+  }
+}
